@@ -24,6 +24,10 @@ namespace School_Inventory
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBorderBtn);
+            //Form
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
             
         }
         //Structs
@@ -118,7 +122,7 @@ namespace School_Inventory
             leftBorderBtn.Visible = false;
             icon.IconChar = IconChar.Home;
             icon.IconColor = Color.RoyalBlue;
-            label1.Text = "Home";
+          //  label1.Text = "Home";
         }
 
         
@@ -142,7 +146,7 @@ namespace School_Inventory
         private void panelTitelBar_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            SendMessage(this.Handle, 0x112, 0xf12, 0);
         }
     }
 }

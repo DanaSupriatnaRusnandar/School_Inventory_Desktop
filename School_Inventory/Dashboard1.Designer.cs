@@ -40,6 +40,9 @@
             this.panelTitelBar = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.icon = new FontAwesome.Sharp.IconPictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.userControlDashboard1 = new School_Inventory.UserControlDashboard();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Home)).BeginInit();
@@ -60,7 +63,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 592);
+            this.panelMenu.Size = new System.Drawing.Size(220, 561);
             this.panelMenu.TabIndex = 0;
             // 
             // btn_Pengaturan
@@ -74,7 +77,7 @@
             this.btn_Pengaturan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Pengaturan.IconSize = 32;
             this.btn_Pengaturan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Pengaturan.Location = new System.Drawing.Point(0, 415);
+            this.btn_Pengaturan.Location = new System.Drawing.Point(0, 395);
             this.btn_Pengaturan.Name = "btn_Pengaturan";
             this.btn_Pengaturan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Pengaturan.Size = new System.Drawing.Size(220, 55);
@@ -97,7 +100,7 @@
             this.Btn_Laporan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Btn_Laporan.IconSize = 32;
             this.Btn_Laporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_Laporan.Location = new System.Drawing.Point(0, 360);
+            this.Btn_Laporan.Location = new System.Drawing.Point(0, 340);
             this.Btn_Laporan.Name = "Btn_Laporan";
             this.Btn_Laporan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.Btn_Laporan.Size = new System.Drawing.Size(220, 55);
@@ -120,7 +123,7 @@
             this.btn_pengembalian.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_pengembalian.IconSize = 32;
             this.btn_pengembalian.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_pengembalian.Location = new System.Drawing.Point(0, 305);
+            this.btn_pengembalian.Location = new System.Drawing.Point(0, 285);
             this.btn_pengembalian.Name = "btn_pengembalian";
             this.btn_pengembalian.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_pengembalian.Size = new System.Drawing.Size(220, 55);
@@ -143,7 +146,7 @@
             this.btn_Peminjaman.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Peminjaman.IconSize = 32;
             this.btn_Peminjaman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Peminjaman.Location = new System.Drawing.Point(0, 250);
+            this.btn_Peminjaman.Location = new System.Drawing.Point(0, 230);
             this.btn_Peminjaman.Name = "btn_Peminjaman";
             this.btn_Peminjaman.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Peminjaman.Size = new System.Drawing.Size(220, 55);
@@ -166,7 +169,7 @@
             this.btn_Kelas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Kelas.IconSize = 32;
             this.btn_Kelas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Kelas.Location = new System.Drawing.Point(0, 195);
+            this.btn_Kelas.Location = new System.Drawing.Point(0, 175);
             this.btn_Kelas.Name = "btn_Kelas";
             this.btn_Kelas.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Kelas.Size = new System.Drawing.Size(220, 55);
@@ -189,7 +192,7 @@
             this.btn_Dashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Dashboard.IconSize = 32;
             this.btn_Dashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Dashboard.Location = new System.Drawing.Point(0, 140);
+            this.btn_Dashboard.Location = new System.Drawing.Point(0, 120);
             this.btn_Dashboard.Name = "btn_Dashboard";
             this.btn_Dashboard.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_Dashboard.Size = new System.Drawing.Size(220, 55);
@@ -207,16 +210,16 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 140);
+            this.panelLogo.Size = new System.Drawing.Size(220, 120);
             this.panelLogo.TabIndex = 0;
             // 
             // btn_Home
             // 
             this.btn_Home.BackgroundImage = global::School_Inventory.Properties.Resources.logosmea;
             this.btn_Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Home.Location = new System.Drawing.Point(33, 8);
+            this.btn_Home.Location = new System.Drawing.Point(58, 14);
             this.btn_Home.Name = "btn_Home";
-            this.btn_Home.Size = new System.Drawing.Size(148, 122);
+            this.btn_Home.Size = new System.Drawing.Size(98, 92);
             this.btn_Home.TabIndex = 0;
             this.btn_Home.TabStop = false;
             this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click);
@@ -224,26 +227,29 @@
             // panelTitelBar
             // 
             this.panelTitelBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelTitelBar.Controls.Add(this.label3);
             this.panelTitelBar.Controls.Add(this.label1);
             this.panelTitelBar.Controls.Add(this.icon);
+            this.panelTitelBar.Controls.Add(this.label2);
             this.panelTitelBar.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panelTitelBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitelBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitelBar.Name = "panelTitelBar";
-            this.panelTitelBar.Size = new System.Drawing.Size(664, 65);
+            this.panelTitelBar.Size = new System.Drawing.Size(969, 80);
             this.panelTitelBar.TabIndex = 1;
             this.panelTitelBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitelBar_MouseDown);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label1.Location = new System.Drawing.Point(34, 24);
+            this.label1.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(155, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Home";
+            this.label1.Size = new System.Drawing.Size(57, 24);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "HOME";
             // 
             // icon
             // 
@@ -258,11 +264,42 @@
             this.icon.TabIndex = 1;
             this.icon.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(394, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(227, 39);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "USER PAGE";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(130, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(188, 39);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "You Are In";
+            // 
+            // userControlDashboard1
+            // 
+            this.userControlDashboard1.BackColor = System.Drawing.Color.White;
+            this.userControlDashboard1.Location = new System.Drawing.Point(220, 78);
+            this.userControlDashboard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userControlDashboard1.Name = "userControlDashboard1";
+            this.userControlDashboard1.Size = new System.Drawing.Size(971, 485);
+            this.userControlDashboard1.TabIndex = 2;
+            // 
             // Dashboard1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 592);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1189, 561);
+            this.Controls.Add(this.userControlDashboard1);
             this.Controls.Add(this.panelTitelBar);
             this.Controls.Add(this.panelMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -292,9 +329,12 @@
         private FontAwesome.Sharp.IconButton btn_Kelas;
         private FontAwesome.Sharp.IconButton btn_Dashboard;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.PictureBox btn_Home;
         private System.Windows.Forms.Panel panelTitelBar;
         private FontAwesome.Sharp.IconPictureBox icon;
+        private System.Windows.Forms.PictureBox btn_Home;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private UserControlDashboard userControlDashboard1;
     }
 }

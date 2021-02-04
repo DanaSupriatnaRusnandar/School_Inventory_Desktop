@@ -34,12 +34,12 @@ namespace School_Inventory.MyClass
             bool check = false;
             using (var cmd = new MySqlCommand())
             {
-                cmd.CommandText = "SELECT * FROM `petugas` WHERE username=@username AND password=@password";
+                cmd.CommandText = "SELECT * FROM `petugas` WHERE username=@user AND password=@pass";
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = con;
 
-                cmd.Parameters.Add("@username", MySqlDbType.VarChar).Value = log_username;
-                cmd.Parameters.Add("@password", MySqlDbType.VarChar).Value = log_password;
+                cmd.Parameters.Add("@user", MySqlDbType.VarChar).Value = log_username;
+                cmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = log_password;
 
                 rd = cmd.ExecuteReader();
 
