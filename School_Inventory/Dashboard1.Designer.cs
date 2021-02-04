@@ -268,7 +268,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(394, 24);
+            this.label2.Location = new System.Drawing.Point(454, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(227, 39);
             this.label2.TabIndex = 2;
@@ -288,10 +288,11 @@
             // 
             this.userControlDashboard1.BackColor = System.Drawing.Color.White;
             this.userControlDashboard1.Location = new System.Drawing.Point(220, 78);
-            this.userControlDashboard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userControlDashboard1.Margin = new System.Windows.Forms.Padding(4);
             this.userControlDashboard1.Name = "userControlDashboard1";
             this.userControlDashboard1.Size = new System.Drawing.Size(971, 485);
             this.userControlDashboard1.TabIndex = 2;
+            this.userControlDashboard1.Load += new System.EventHandler(this.userControlDashboard1_Load);
             // 
             // Dashboard1
             // 

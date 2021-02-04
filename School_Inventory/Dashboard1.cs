@@ -148,5 +148,10 @@ namespace School_Inventory
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf12, 0);
         }
+
+        private void userControlDashboard1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
