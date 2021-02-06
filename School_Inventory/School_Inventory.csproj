@@ -135,6 +135,24 @@
     <Compile Include="UserControlDashboard.Designer.cs">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlDataAkun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDataAkun.Designer.cs">
+      <DependentUpon>UserControlDataAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlEditAkun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlEditAkun.Designer.cs">
+      <DependentUpon>UserControlEditAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTambahAkun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTambahAkun.Designer.cs">
+      <DependentUpon>UserControlTambahAkun.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard1.resx">
       <DependentUpon>Dashboard1.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +171,15 @@
     </Compile>
     <EmbeddedResource Include="UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDataAkun.resx">
+      <DependentUpon>UserControlDataAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlEditAkun.resx">
+      <DependentUpon>UserControlEditAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTambahAkun.resx">
+      <DependentUpon>UserControlTambahAkun.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\MySql.Data.Resources.datasource" />

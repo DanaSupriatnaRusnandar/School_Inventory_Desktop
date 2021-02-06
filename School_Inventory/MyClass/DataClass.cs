@@ -17,7 +17,7 @@ namespace School_Inventory.MyClass
             string db = "school-inventory";
             string username = "root";
             string password = "";
-            string constring = "datasource =" + host + "; database=" + db + "; port=" + 3306 + "; username=" + username + "; password=" + password + "; ";
+            string constring = "datasource =" + host + "; database=" + db + "; port=3306; username=" + username + "; password=" + password + "; SslMode = none";
 
             con = new MySqlConnection(constring);
         }
@@ -34,12 +34,13 @@ namespace School_Inventory.MyClass
             bool check = false;
             using (var cmd = new MySqlCommand())
             {
-                cmd.CommandText = "SELECT * FROM `petugas` WHERE username=@user AND password=@pass";
+                cmd.CommandText = "SELECT username, password, petugas.id_level, level.id_level FROM petugas INNER JOIN level ON petugas.id_level=level.id_level WHERE username=@user AND password=@pass AND level=@level";
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = con;
 
                 cmd.Parameters.Add("@user", MySqlDbType.VarChar).Value = log_username;
                 cmd.Parameters.Add("@pass", MySqlDbType.VarChar).Value = log_password;
+                cmd.Parameters.Add("@level", MySqlDbType.VarChar).Value = log_level;
 
                 rd = cmd.ExecuteReader();
 

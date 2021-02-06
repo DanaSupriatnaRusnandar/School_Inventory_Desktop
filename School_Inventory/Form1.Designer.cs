@@ -38,8 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cmbRole = new System.Windows.Forms.ComboBox();
             this.role = new System.Windows.Forms.Label();
+            this.cmbRole = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -108,7 +108,7 @@
             this.btnlogin.Location = new System.Drawing.Point(200, 410);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(76, 30);
-            this.btnlogin.TabIndex = 6;
+            this.btnlogin.TabIndex = 7;
             this.btnlogin.Text = "Login";
             this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
@@ -169,6 +169,18 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // role
+            // 
+            this.role.AutoSize = true;
+            this.role.BackColor = System.Drawing.Color.Transparent;
+            this.role.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.role.Location = new System.Drawing.Point(60, 348);
+            this.role.Name = "role";
+            this.role.Size = new System.Drawing.Size(82, 16);
+            this.role.TabIndex = 11;
+            this.role.Text = "Hak Akses";
+            // 
             // cmbRole
             // 
             this.cmbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
@@ -180,19 +192,7 @@
             this.cmbRole.Location = new System.Drawing.Point(60, 367);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.Size = new System.Drawing.Size(215, 21);
-            this.cmbRole.TabIndex = 10;
-            // 
-            // role
-            // 
-            this.role.AutoSize = true;
-            this.role.BackColor = System.Drawing.Color.Transparent;
-            this.role.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.role.Location = new System.Drawing.Point(60, 348);
-            this.role.Name = "role";
-            this.role.Size = new System.Drawing.Size(81, 16);
-            this.role.TabIndex = 11;
-            this.role.Text = "User Type";
+            this.cmbRole.TabIndex = 6;
             // 
             // Login
             // 

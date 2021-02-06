@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace School_Inventory
 {
-    public partial class UserControlDashboard : UserControl
+    public partial class UserControlDataAkun : UserControl
     {
-        public UserControlDashboard()
+        public UserControlDataAkun()
         {
             InitializeComponent();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

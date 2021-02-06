@@ -38,11 +38,10 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.btn_Home = new System.Windows.Forms.PictureBox();
             this.panelTitelBar = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.icon = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.userControlDashboard1 = new School_Inventory.UserControlDashboard();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Home)).BeginInit();
@@ -239,13 +238,23 @@
             this.panelTitelBar.TabIndex = 1;
             this.panelTitelBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitelBar_MouseDown);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(617, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(188, 39);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "You Are In";
+            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(155, 25);
+            this.label1.Location = new System.Drawing.Point(41, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 24);
             this.label1.TabIndex = 3;
@@ -268,31 +277,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(454, 24);
+            this.label2.Location = new System.Drawing.Point(204, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(227, 39);
             this.label2.TabIndex = 2;
             this.label2.Text = "USER PAGE";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(130, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 39);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "You Are In";
-            // 
-            // userControlDashboard1
-            // 
-            this.userControlDashboard1.BackColor = System.Drawing.Color.White;
-            this.userControlDashboard1.Location = new System.Drawing.Point(220, 78);
-            this.userControlDashboard1.Margin = new System.Windows.Forms.Padding(4);
-            this.userControlDashboard1.Name = "userControlDashboard1";
-            this.userControlDashboard1.Size = new System.Drawing.Size(971, 485);
-            this.userControlDashboard1.TabIndex = 2;
-            this.userControlDashboard1.Load += new System.EventHandler(this.userControlDashboard1_Load);
             // 
             // Dashboard1
             // 
@@ -300,7 +289,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1189, 561);
-            this.Controls.Add(this.userControlDashboard1);
             this.Controls.Add(this.panelTitelBar);
             this.Controls.Add(this.panelMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -336,6 +324,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private UserControlDashboard userControlDashboard1;
     }
 }
