@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.usernametxt = new System.Windows.Forms.Label();
             this.passwordtxt = new System.Windows.Forms.Label();
@@ -37,12 +38,28 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.role = new System.Windows.Forms.Label();
-            this.cmbRole = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.btnlogin);
+            this.groupBox1.Controls.Add(this.passtxt);
+            this.groupBox1.Controls.Add(this.usertxt);
+            this.groupBox1.Controls.Add(this.passwordtxt);
+            this.groupBox1.Controls.Add(this.usernametxt);
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Location = new System.Drawing.Point(1, -7);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(340, 499);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -105,7 +122,7 @@
             this.btnlogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnlogin.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnlogin.ForeColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(200, 410);
+            this.btnlogin.Location = new System.Drawing.Point(200, 374);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(76, 30);
             this.btnlogin.TabIndex = 7;
@@ -149,51 +166,6 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "SMK Negeri 1 Subang";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.role);
-            this.groupBox1.Controls.Add(this.cmbRole);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnlogin);
-            this.groupBox1.Controls.Add(this.passtxt);
-            this.groupBox1.Controls.Add(this.usertxt);
-            this.groupBox1.Controls.Add(this.passwordtxt);
-            this.groupBox1.Controls.Add(this.usernametxt);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Location = new System.Drawing.Point(1, -7);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(340, 499);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            // 
-            // role
-            // 
-            this.role.AutoSize = true;
-            this.role.BackColor = System.Drawing.Color.Transparent;
-            this.role.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.role.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.role.Location = new System.Drawing.Point(60, 348);
-            this.role.Name = "role";
-            this.role.Size = new System.Drawing.Size(82, 16);
-            this.role.TabIndex = 11;
-            this.role.Text = "Hak Akses";
-            // 
-            // cmbRole
-            // 
-            this.cmbRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Items.AddRange(new object[] {
-            "Administrator",
-            "Operator",
-            "Peminjam"});
-            this.cmbRole.Location = new System.Drawing.Point(60, 367);
-            this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(215, 21);
-            this.cmbRole.TabIndex = 6;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,27 +177,25 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label usernametxt;
-        private System.Windows.Forms.Label passwordtxt;
-        private System.Windows.Forms.TextBox usertxt;
-        private System.Windows.Forms.TextBox passtxt;
-        private System.Windows.Forms.Button btnlogin;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label role;
-        private System.Windows.Forms.ComboBox cmbRole;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnlogin;
+        public System.Windows.Forms.TextBox passtxt;
+        public System.Windows.Forms.TextBox usertxt;
+        private System.Windows.Forms.Label passwordtxt;
+        private System.Windows.Forms.Label usernametxt;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

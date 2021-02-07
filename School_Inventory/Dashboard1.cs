@@ -61,10 +61,6 @@ namespace School_Inventory
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
-
-                //Icon Home
-                icon.IconChar = currentBtn.IconChar;
-                icon.IconColor = color;
             }
         }
 
@@ -111,30 +107,11 @@ namespace School_Inventory
             activateButton(sender, RGBColor.color6);
         }
 
-        private void btn_Home_Click(object sender, EventArgs e)
+        private void btn_keluar_Click_1(object sender, EventArgs e)
         {
-            Reset();
-        }
-
-        private void Reset()
-        {
-            DissableButton();
-            leftBorderBtn.Visible = false;
-            icon.IconChar = IconChar.Home;
-            icon.IconColor = Color.RoyalBlue;
-          //  label1.Text = "Home";
-        }
-
-        
-
-        private void Dashboard1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            Login lg = new Login();
+            lg.Show();
         }
 
         //Drag Form
@@ -149,9 +126,96 @@ namespace School_Inventory
             SendMessage(this.Handle, 0x112, 0xf12, 0);
         }
 
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+
+
+
+        //Belum Terpakai
+
+        private void icon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dashboard1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void userControlDashboard1_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Home_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelTitelBar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
+
 }

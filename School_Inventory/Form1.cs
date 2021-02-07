@@ -8,20 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using School_Inventory.MyClass;
 
 
 namespace School_Inventory
 {
     public partial class Login : Form
     {
-        DataClass dc = new DataClass();
-        USER user = new USER();
-
-        //TRANSFER TO ANOTHER  FORM
-
-        public static string T_username;
-        public static string T_level;
         public Login()
         {
             InitializeComponent();
@@ -29,35 +21,54 @@ namespace School_Inventory
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            user.log_username = usertxt.Text;
-            user.log_password = passtxt.Text;
-            user.log_level = cmbRole.SelectedIndex;
-            bool verify = user.user_verification();
-            
-            if(verify)
+            string connStr = "datasource=localhost; username=root; password=; database=school-inventory;";
+            MySqlConnection conn = new MySqlConnection(connStr);
+
+            if (usertxt.Text == "" || passtxt.Text == "")
             {
-                MessageBox.Show("Berhasil Login");
-                int level = user.log_level;
-                T_username = user.log_username;
-                if(level == 0)
-                {
-                    T_level = "ADMINISTRATOR";
-                }
-                else if(level == 1)
-                {
-                    T_level = "OPERATOR";
-                }
-                else if(level == 2)
-                {
-                    T_level = "PEMINJAM";
-                }
-                Dashboard1 db = new Dashboard1();
-                db.Show();
-                this.Hide();
+                MessageBox.Show("MASUKAN USERNAME DAN PASSWORD!!");
             }
             else
             {
-                MessageBox.Show("Username, Paswword, dan Hak Akses yang Anda Masukan Salah!");
+                conn.Open();
+                MySqlDataAdapter da = new MySqlDataAdapter("SELECT* FROM petugas JOIN level ON petugas.id_level = level.id_level WHERE username = '" + usertxt.Text + "' AND password = '" + passtxt.Text + "'", conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        int id_level = dr.Field<int>("id_level");
+
+                        if (id_level == 1)
+                        {
+                            MessageBox.Show("Login berhasil, kamu login sebagai Administrator");
+                            this.Hide();
+                            Dashboard1 ds = new Dashboard1();
+                            ds.Show();
+                        }
+                        else if (id_level == 2)
+                        {
+                            MessageBox.Show("Login berhasil, kamu login sebagai Petugasr");
+                            this.Hide();
+                            DashboardPetugas dp = new DashboardPetugas();
+                            dp.Show();
+                        }
+                        else if(id_level == 3)
+                        {
+                            MessageBox.Show("Login berhasil, kamu login sebagai Peminjam");
+                            this.Hide();
+                            DashboardPeminjam dm = new DashboardPeminjam();
+                            dm.Show();
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("USERNAME ATAU PASSWORD ANDA SALAH!");
+                    conn.Close();
+                }
+
             }
         }
 
@@ -69,6 +80,6 @@ namespace School_Inventory
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
-        }
+        } 
     }
 }
