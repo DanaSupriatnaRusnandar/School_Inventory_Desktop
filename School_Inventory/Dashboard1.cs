@@ -97,12 +97,12 @@ namespace School_Inventory
             activateButton(sender, RGBColor.color4);
         }
 
-        private void Btn_Laporan_Click(object sender, EventArgs e)
+        private void Btn_laporan_Click_1(object sender, EventArgs e)
         {
             activateButton(sender, RGBColor.color5);
         }
 
-        private void iconButton6_Click(object sender, EventArgs e)
+        private void btn_Pengaturan_Click(object sender, EventArgs e)
         {
             activateButton(sender, RGBColor.color6);
         }

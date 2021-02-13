@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace School_Inventory
 {
-    public partial class UserControlDashboard : UserControl
+    public partial class UserControlDataMaster : UserControl
     {
-        public UserControlDashboard()
+        public UserControlDataMaster()
         {
             InitializeComponent();
         }

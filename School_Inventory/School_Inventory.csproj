@@ -140,17 +140,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControlDashboard.cs">
+    <Compile Include="UserControlDataMaster.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlDashboard.Designer.cs">
-      <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    <Compile Include="UserControlDataMaster.Designer.cs">
+      <DependentUpon>UserControlDataMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlDataAkun.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlDataAkun.Designer.cs">
       <DependentUpon>UserControlDataAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDataMasterCRUD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDataMasterCRUD.Designer.cs">
+      <DependentUpon>UserControlDataMasterCRUD.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlEditAkun.cs">
       <SubType>UserControl</SubType>
@@ -186,11 +192,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControlDashboard.resx">
-      <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="UserControlDataMaster.resx">
+      <DependentUpon>UserControlDataMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlDataAkun.resx">
       <DependentUpon>UserControlDataAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDataMasterCRUD.resx">
+      <DependentUpon>UserControlDataMasterCRUD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlEditAkun.resx">
       <DependentUpon>UserControlEditAkun.cs</DependentUpon>
