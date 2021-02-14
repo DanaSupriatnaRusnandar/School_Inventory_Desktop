@@ -29,8 +29,14 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btn_Pengaturan = new FontAwesome.Sharp.IconButton();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.Btn_laporan = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btn_pengembalian = new FontAwesome.Sharp.IconButton();
-            this.btn_Peminjaman = new FontAwesome.Sharp.IconButton();
+            this.btn_MasterData = new FontAwesome.Sharp.IconButton();
             this.btn_Kelas = new FontAwesome.Sharp.IconButton();
             this.btn_Dashboard = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -46,12 +52,7 @@
             this.btn_Close = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.Btn_laporan = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.btn_Pengaturan = new FontAwesome.Sharp.IconButton();
+            this.userControlDataMaster1 = new School_Inventory.UserControlDataMaster();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Home)).BeginInit();
@@ -59,6 +60,7 @@
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -71,7 +73,7 @@
             this.panelMenu.Controls.Add(this.iconButton2);
             this.panelMenu.Controls.Add(this.iconButton1);
             this.panelMenu.Controls.Add(this.btn_pengembalian);
-            this.panelMenu.Controls.Add(this.btn_Peminjaman);
+            this.panelMenu.Controls.Add(this.btn_MasterData);
             this.panelMenu.Controls.Add(this.btn_Kelas);
             this.panelMenu.Controls.Add(this.btn_Dashboard);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -81,6 +83,140 @@
             this.panelMenu.Size = new System.Drawing.Size(220, 696);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            // 
+            // btn_Pengaturan
+            // 
+            this.btn_Pengaturan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Pengaturan.FlatAppearance.BorderSize = 0;
+            this.btn_Pengaturan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Pengaturan.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_Pengaturan.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            this.btn_Pengaturan.IconColor = System.Drawing.Color.Gainsboro;
+            this.btn_Pengaturan.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_Pengaturan.IconSize = 32;
+            this.btn_Pengaturan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Pengaturan.Location = new System.Drawing.Point(0, 615);
+            this.btn_Pengaturan.Name = "btn_Pengaturan";
+            this.btn_Pengaturan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btn_Pengaturan.Size = new System.Drawing.Size(220, 55);
+            this.btn_Pengaturan.TabIndex = 7;
+            this.btn_Pengaturan.Text = "Pengaturan";
+            this.btn_Pengaturan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Pengaturan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Pengaturan.UseMnemonic = false;
+            this.btn_Pengaturan.UseVisualStyleBackColor = true;
+            this.btn_Pengaturan.Click += new System.EventHandler(this.btn_Pengaturan_Click);
+            // 
+            // iconButton4
+            // 
+            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Tasks;
+            this.iconButton4.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.IconSize = 32;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.Location = new System.Drawing.Point(0, 560);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton4.Size = new System.Drawing.Size(220, 55);
+            this.iconButton4.TabIndex = 10;
+            this.iconButton4.Text = "Laporan Pengembalian";
+            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton4.UseMnemonic = false;
+            this.iconButton4.UseVisualStyleBackColor = true;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Readme;
+            this.iconButton3.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 32;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.Location = new System.Drawing.Point(0, 505);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton3.Size = new System.Drawing.Size(220, 55);
+            this.iconButton3.TabIndex = 9;
+            this.iconButton3.Text = "Laporan Peminjaman";
+            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton3.UseMnemonic = false;
+            this.iconButton3.UseVisualStyleBackColor = true;
+            // 
+            // Btn_laporan
+            // 
+            this.Btn_laporan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btn_laporan.FlatAppearance.BorderSize = 0;
+            this.Btn_laporan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_laporan.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Btn_laporan.IconChar = FontAwesome.Sharp.IconChar.ClipboardList;
+            this.Btn_laporan.IconColor = System.Drawing.Color.Gainsboro;
+            this.Btn_laporan.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Btn_laporan.IconSize = 32;
+            this.Btn_laporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_laporan.Location = new System.Drawing.Point(0, 450);
+            this.Btn_laporan.Name = "Btn_laporan";
+            this.Btn_laporan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.Btn_laporan.Size = new System.Drawing.Size(220, 55);
+            this.Btn_laporan.TabIndex = 6;
+            this.Btn_laporan.Text = "Laporan";
+            this.Btn_laporan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_laporan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Btn_laporan.UseMnemonic = false;
+            this.Btn_laporan.UseVisualStyleBackColor = true;
+            this.Btn_laporan.Click += new System.EventHandler(this.Btn_laporan_Click_1);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.VoteYea;
+            this.iconButton2.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 32;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(0, 395);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton2.Size = new System.Drawing.Size(220, 55);
+            this.iconButton2.TabIndex = 8;
+            this.iconButton2.Text = "Pengembalian";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton2.UseMnemonic = false;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
+            this.iconButton1.IconColor = System.Drawing.Color.Gainsboro;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 32;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(0, 340);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButton1.Size = new System.Drawing.Size(220, 55);
+            this.iconButton1.TabIndex = 7;
+            this.iconButton1.Text = "Peminjaman";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseMnemonic = false;
+            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // btn_pengembalian
             // 
@@ -105,28 +241,28 @@
             this.btn_pengembalian.UseVisualStyleBackColor = true;
             this.btn_pengembalian.Click += new System.EventHandler(this.btn_pengembalian_Click);
             // 
-            // btn_Peminjaman
+            // btn_MasterData
             // 
-            this.btn_Peminjaman.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Peminjaman.FlatAppearance.BorderSize = 0;
-            this.btn_Peminjaman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Peminjaman.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Peminjaman.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
-            this.btn_Peminjaman.IconColor = System.Drawing.Color.Gainsboro;
-            this.btn_Peminjaman.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_Peminjaman.IconSize = 32;
-            this.btn_Peminjaman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Peminjaman.Location = new System.Drawing.Point(0, 230);
-            this.btn_Peminjaman.Name = "btn_Peminjaman";
-            this.btn_Peminjaman.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btn_Peminjaman.Size = new System.Drawing.Size(220, 55);
-            this.btn_Peminjaman.TabIndex = 3;
-            this.btn_Peminjaman.Text = "Master Data";
-            this.btn_Peminjaman.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Peminjaman.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Peminjaman.UseMnemonic = false;
-            this.btn_Peminjaman.UseVisualStyleBackColor = true;
-            this.btn_Peminjaman.Click += new System.EventHandler(this.btn_Peminjaman_Click);
+            this.btn_MasterData.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_MasterData.FlatAppearance.BorderSize = 0;
+            this.btn_MasterData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MasterData.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_MasterData.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
+            this.btn_MasterData.IconColor = System.Drawing.Color.Gainsboro;
+            this.btn_MasterData.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_MasterData.IconSize = 32;
+            this.btn_MasterData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_MasterData.Location = new System.Drawing.Point(0, 230);
+            this.btn_MasterData.Name = "btn_MasterData";
+            this.btn_MasterData.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btn_MasterData.Size = new System.Drawing.Size(220, 55);
+            this.btn_MasterData.TabIndex = 3;
+            this.btn_MasterData.Text = "Master Data";
+            this.btn_MasterData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_MasterData.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_MasterData.UseMnemonic = false;
+            this.btn_MasterData.UseVisualStyleBackColor = true;
+            this.btn_MasterData.Click += new System.EventHandler(this.btn_Peminjaman_Click);
             // 
             // btn_Kelas
             // 
@@ -205,7 +341,7 @@
             this.panelTitelBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitelBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitelBar.Name = "panelTitelBar";
-            this.panelTitelBar.Size = new System.Drawing.Size(643, 90);
+            this.panelTitelBar.Size = new System.Drawing.Size(688, 83);
             this.panelTitelBar.TabIndex = 1;
             this.panelTitelBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitelBar_Paint);
             this.panelTitelBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitelBar_MouseDown);
@@ -227,9 +363,9 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(557, 0);
+            this.panel1.Location = new System.Drawing.Point(602, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(86, 90);
+            this.panel1.Size = new System.Drawing.Size(86, 83);
             this.panel1.TabIndex = 9;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -239,7 +375,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(17, 32);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(69, 58);
+            this.panel3.Size = new System.Drawing.Size(69, 51);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -321,7 +457,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-122, 30);
+            this.label1.Location = new System.Drawing.Point(-99, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 24);
             this.label1.TabIndex = 3;
@@ -330,153 +466,31 @@
             // 
             // panel4
             // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(220, 90);
+            this.panel4.Controls.Add(this.userControlDataMaster1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(220, 83);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(643, 606);
+            this.panel4.Size = new System.Drawing.Size(688, 614);
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // iconButton1
+            // userControlDataMaster1
             // 
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.iconButton1.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 32;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 340);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton1.Size = new System.Drawing.Size(220, 55);
-            this.iconButton1.TabIndex = 7;
-            this.iconButton1.Text = "Peminjaman";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseMnemonic = false;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.VoteYea;
-            this.iconButton2.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 32;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 395);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton2.Size = new System.Drawing.Size(220, 55);
-            this.iconButton2.TabIndex = 8;
-            this.iconButton2.Text = "Pengembalian";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseMnemonic = false;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // Btn_laporan
-            // 
-            this.Btn_laporan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Btn_laporan.FlatAppearance.BorderSize = 0;
-            this.Btn_laporan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_laporan.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Btn_laporan.IconChar = FontAwesome.Sharp.IconChar.ClipboardList;
-            this.Btn_laporan.IconColor = System.Drawing.Color.Gainsboro;
-            this.Btn_laporan.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Btn_laporan.IconSize = 32;
-            this.Btn_laporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_laporan.Location = new System.Drawing.Point(0, 450);
-            this.Btn_laporan.Name = "Btn_laporan";
-            this.Btn_laporan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.Btn_laporan.Size = new System.Drawing.Size(220, 55);
-            this.Btn_laporan.TabIndex = 6;
-            this.Btn_laporan.Text = "Laporan";
-            this.Btn_laporan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Btn_laporan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Btn_laporan.UseMnemonic = false;
-            this.Btn_laporan.UseVisualStyleBackColor = true;
-            this.Btn_laporan.Click += new System.EventHandler(this.Btn_laporan_Click_1);
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Readme;
-            this.iconButton3.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 32;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 505);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton3.Size = new System.Drawing.Size(220, 55);
-            this.iconButton3.TabIndex = 9;
-            this.iconButton3.Text = "Laporan Peminjaman";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton3.UseMnemonic = false;
-            this.iconButton3.UseVisualStyleBackColor = true;
-            // 
-            // iconButton4
-            // 
-            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Tasks;
-            this.iconButton4.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 32;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(0, 560);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButton4.Size = new System.Drawing.Size(220, 55);
-            this.iconButton4.TabIndex = 10;
-            this.iconButton4.Text = "Laporan Pengembalian";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton4.UseMnemonic = false;
-            this.iconButton4.UseVisualStyleBackColor = true;
-            // 
-            // btn_Pengaturan
-            // 
-            this.btn_Pengaturan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Pengaturan.FlatAppearance.BorderSize = 0;
-            this.btn_Pengaturan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Pengaturan.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btn_Pengaturan.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            this.btn_Pengaturan.IconColor = System.Drawing.Color.Gainsboro;
-            this.btn_Pengaturan.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_Pengaturan.IconSize = 32;
-            this.btn_Pengaturan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Pengaturan.Location = new System.Drawing.Point(0, 615);
-            this.btn_Pengaturan.Name = "btn_Pengaturan";
-            this.btn_Pengaturan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btn_Pengaturan.Size = new System.Drawing.Size(220, 55);
-            this.btn_Pengaturan.TabIndex = 7;
-            this.btn_Pengaturan.Text = "Pengaturan";
-            this.btn_Pengaturan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Pengaturan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Pengaturan.UseMnemonic = false;
-            this.btn_Pengaturan.UseVisualStyleBackColor = true;
-            this.btn_Pengaturan.Click += new System.EventHandler(this.btn_Pengaturan_Click);
+            this.userControlDataMaster1.BackColor = System.Drawing.Color.White;
+            this.userControlDataMaster1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.userControlDataMaster1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDataMaster1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlDataMaster1.Name = "userControlDataMaster1";
+            this.userControlDataMaster1.Size = new System.Drawing.Size(688, 614);
+            this.userControlDataMaster1.TabIndex = 0;
+            this.userControlDataMaster1.Load += new System.EventHandler(this.userControlDataMaster1_Load_1);
             // 
             // Dashboard1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(863, 696);
+            this.ClientSize = new System.Drawing.Size(908, 696);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelTitelBar);
             this.Controls.Add(this.panelMenu);
@@ -495,6 +509,7 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -503,7 +518,7 @@
 
         private System.Windows.Forms.Panel panelMenu;
         private FontAwesome.Sharp.IconButton btn_pengembalian;
-        private FontAwesome.Sharp.IconButton btn_Peminjaman;
+        private FontAwesome.Sharp.IconButton btn_MasterData;
         private FontAwesome.Sharp.IconButton btn_Kelas;
         private FontAwesome.Sharp.IconButton btn_Dashboard;
         private System.Windows.Forms.Panel panelTitelBar;
@@ -511,7 +526,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton btn_keluar;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_Minimize;
@@ -525,5 +539,7 @@
         private FontAwesome.Sharp.IconButton btn_Pengaturan;
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton3;
+        private System.Windows.Forms.Panel panel4;
+        private UserControlDataMaster userControlDataMaster1;
     }
 }

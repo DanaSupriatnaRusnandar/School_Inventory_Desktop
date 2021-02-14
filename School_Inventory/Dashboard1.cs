@@ -90,6 +90,15 @@ namespace School_Inventory
         private void btn_Peminjaman_Click(object sender, EventArgs e)
         {
             activateButton(sender, RGBColor.color3);
+
+            //Hide other usercontrol
+
+            //Show current usercontrol
+                userControlDataMaster1.Show();
+                userControlDataMaster1.BringToFront();
+
+        //    UserControlDataMaster dm = new UserControlDataMaster();
+        //    MainControl.showControl(dm, Content);
         }
 
         private void btn_pengembalian_Click(object sender, EventArgs e)
@@ -128,7 +137,7 @@ namespace School_Inventory
 
         private void btn_Close_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -142,8 +151,7 @@ namespace School_Inventory
             this.WindowState = FormWindowState.Minimized;
         }
 
-
-
+  
 
         //Belum Terpakai
 
@@ -154,7 +162,7 @@ namespace School_Inventory
 
         private void Dashboard1_Load(object sender, EventArgs e)
         {
-
+            userControlDataMaster1.Hide();
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -213,6 +221,16 @@ namespace School_Inventory
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void userControlDataMaster1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void userControlDataMaster1_Load_1(object sender, EventArgs e)
         {
 
         }

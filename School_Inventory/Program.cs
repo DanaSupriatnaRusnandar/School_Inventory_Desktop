@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Luthor.lib;
 
 namespace School_Inventory
 {
@@ -14,9 +15,12 @@ namespace School_Inventory
         [STAThread]
         static void Main()
         {
+            Connection.setConnection("localhost", "school-inventory", "root", "");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Dashboard1());
         }
+
     }
 }
