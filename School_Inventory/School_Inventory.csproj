@@ -139,6 +139,12 @@
     <Compile Include="DataMasterADD.Designer.cs">
       <DependentUpon>DataMasterADD.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataTambahAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTambahAkun.Designer.cs">
+      <DependentUpon>DataTambahAkun.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,12 +172,6 @@
     <Compile Include="UserControlEditAkun.Designer.cs">
       <DependentUpon>UserControlEditAkun.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlTambahAkun.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlTambahAkun.Designer.cs">
-      <DependentUpon>UserControlTambahAkun.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Dashboard1.resx">
       <DependentUpon>Dashboard1.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataMasterADD.resx">
       <DependentUpon>DataMasterADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTambahAkun.resx">
+      <DependentUpon>DataTambahAkun.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -205,9 +208,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlEditAkun.resx">
       <DependentUpon>UserControlEditAkun.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlTambahAkun.resx">
-      <DependentUpon>UserControlTambahAkun.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\MySql.Data.Resources.datasource" />

@@ -53,6 +53,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.userControlDataMaster1 = new School_Inventory.UserControlDataMaster();
+            this.userControlDataAkun1 = new School_Inventory.UserControlDataAkun();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Home)).BeginInit();
@@ -466,6 +467,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.userControlDataAkun1);
             this.panel4.Controls.Add(this.userControlDataMaster1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(220, 83);
@@ -484,6 +486,15 @@
             this.userControlDataMaster1.Size = new System.Drawing.Size(688, 614);
             this.userControlDataMaster1.TabIndex = 0;
             this.userControlDataMaster1.Load += new System.EventHandler(this.userControlDataMaster1_Load_1);
+            // 
+            // userControlDataAkun1
+            // 
+            this.userControlDataAkun1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlDataAkun1.Location = new System.Drawing.Point(0, 614);
+            this.userControlDataAkun1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userControlDataAkun1.Name = "userControlDataAkun1";
+            this.userControlDataAkun1.Size = new System.Drawing.Size(688, 0);
+            this.userControlDataAkun1.TabIndex = 1;
             // 
             // Dashboard1
             // 
@@ -541,5 +552,6 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private System.Windows.Forms.Panel panel4;
         private UserControlDataMaster userControlDataMaster1;
+        private UserControlDataAkun userControlDataAkun1;
     }
 }

@@ -85,6 +85,12 @@ namespace School_Inventory
         private void btn_Kelas_Click(object sender, EventArgs e)
         {
             activateButton(sender, RGBColor.color2);
+
+            //Hide other usercontrol
+            userControlDataMaster1.Hide();
+            //Show current usercontrol
+            userControlDataAkun1.Show();
+            userControlDataAkun1.BringToFront();
         }
 
         private void btn_Peminjaman_Click(object sender, EventArgs e)
@@ -92,13 +98,10 @@ namespace School_Inventory
             activateButton(sender, RGBColor.color3);
 
             //Hide other usercontrol
-
+            userControlDataAkun1.Hide();
             //Show current usercontrol
-                userControlDataMaster1.Show();
-                userControlDataMaster1.BringToFront();
-
-        //    UserControlDataMaster dm = new UserControlDataMaster();
-        //    MainControl.showControl(dm, Content);
+            userControlDataMaster1.Show();
+            userControlDataMaster1.BringToFront();
         }
 
         private void btn_pengembalian_Click(object sender, EventArgs e)

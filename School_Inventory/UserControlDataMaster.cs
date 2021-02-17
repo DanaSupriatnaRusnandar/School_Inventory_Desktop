@@ -29,7 +29,6 @@ namespace School_Inventory
         }
         public void Tampilkan()
         {
-            //    DataBase.TampilkanData("SELECT id_inventaris, Nama, Kondisi, Keterangan, Jumlah, ID_Jenis, Tanggal_Register, ID_Ruang, Kode_Inventaris, ID_Petugas FROM inventaris", dataGridView);
             DataTable data = Db.Read("inventaris", "*");
             dataGridView.Rows.Clear();
             foreach(DataRow row in data.Rows)
@@ -38,21 +37,27 @@ namespace School_Inventory
             }
 
         }
+        public void Hapus()
+        {
+            
+            int rowIndex = dataGridView.CurrentCell.RowIndex;
+            dataGridView.Rows.RemoveAt(rowIndex);
+        }
+
 
         private void Btn_Add_Click(object sender, EventArgs e)
         {
             DataMasterADD add = new DataMasterADD(this);
             add.ShowDialog();
         }
-
-        private void UserControl_Shown(object sender, EventArgs e)
+        private void iconButton2_Click(object sender, EventArgs e)
         {
             Tampilkan();
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
+        private void btnHapus_Click(object sender, EventArgs e)
         {
-            Tampilkan();
+            Hapus();
         }
     }
 }

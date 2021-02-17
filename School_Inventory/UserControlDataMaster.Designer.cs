@@ -31,6 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -58,7 +67,6 @@
             this.kode_inventaris = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_petugas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel3.SuspendLayout();
@@ -98,8 +106,7 @@
             this.id_ruang,
             this.kode_inventaris,
             this.id_petugas,
-            this.Column2,
-            this.Column3});
+            this.Column2});
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.GridColor = System.Drawing.Color.Black;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
@@ -243,6 +250,7 @@
             this.btnHapus.Size = new System.Drawing.Size(26, 26);
             this.btnHapus.TabIndex = 2;
             this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // resourcesXBindingSource
             // 
@@ -254,20 +262,24 @@
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "#";
+            this.Column1.HeaderText = "";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
             // id_inventaris
             // 
             this.id_inventaris.DataPropertyName = "id_inventaris";
-            this.id_inventaris.HeaderText = "id_inventaris";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.id_inventaris.DefaultCellStyle = dataGridViewCellStyle1;
+            this.id_inventaris.HeaderText = "#";
             this.id_inventaris.Name = "id_inventaris";
             this.id_inventaris.ReadOnly = true;
             // 
             // nama
             // 
             this.nama.DataPropertyName = "nama";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nama.DefaultCellStyle = dataGridViewCellStyle2;
             this.nama.HeaderText = "Nama Barang";
             this.nama.Name = "nama";
             this.nama.ReadOnly = true;
@@ -275,6 +287,8 @@
             // Kondisi
             // 
             this.Kondisi.DataPropertyName = "Kondisi";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Kondisi.DefaultCellStyle = dataGridViewCellStyle3;
             this.Kondisi.HeaderText = "Kondisi Barang";
             this.Kondisi.Name = "Kondisi";
             this.Kondisi.ReadOnly = true;
@@ -283,6 +297,8 @@
             // keterangan
             // 
             this.keterangan.DataPropertyName = "keterangan";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.keterangan.DefaultCellStyle = dataGridViewCellStyle4;
             this.keterangan.HeaderText = "Keterangan";
             this.keterangan.Name = "keterangan";
             this.keterangan.ReadOnly = true;
@@ -290,6 +306,8 @@
             // jumlah
             // 
             this.jumlah.DataPropertyName = "jumlah";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.jumlah.DefaultCellStyle = dataGridViewCellStyle5;
             this.jumlah.HeaderText = "Jumlah Barang";
             this.jumlah.Name = "jumlah";
             this.jumlah.ReadOnly = true;
@@ -297,6 +315,8 @@
             // id_jenis
             // 
             this.id_jenis.DataPropertyName = "id_jenis";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.id_jenis.DefaultCellStyle = dataGridViewCellStyle6;
             this.id_jenis.HeaderText = "Jenis Barang";
             this.id_jenis.Name = "id_jenis";
             this.id_jenis.ReadOnly = true;
@@ -304,6 +324,8 @@
             // tanggal_register
             // 
             this.tanggal_register.DataPropertyName = "tanggal_register";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.tanggal_register.DefaultCellStyle = dataGridViewCellStyle7;
             this.tanggal_register.HeaderText = "Tanggal Register";
             this.tanggal_register.Name = "tanggal_register";
             this.tanggal_register.ReadOnly = true;
@@ -311,6 +333,8 @@
             // id_ruang
             // 
             this.id_ruang.DataPropertyName = "id_ruang";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.id_ruang.DefaultCellStyle = dataGridViewCellStyle8;
             this.id_ruang.HeaderText = "Kelas";
             this.id_ruang.Name = "id_ruang";
             this.id_ruang.ReadOnly = true;
@@ -318,6 +342,8 @@
             // kode_inventaris
             // 
             this.kode_inventaris.DataPropertyName = "kode_inventaris";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.kode_inventaris.DefaultCellStyle = dataGridViewCellStyle9;
             this.kode_inventaris.HeaderText = "Kode Inventaris";
             this.kode_inventaris.Name = "kode_inventaris";
             this.kode_inventaris.ReadOnly = true;
@@ -325,16 +351,22 @@
             // id_petugas
             // 
             this.id_petugas.DataPropertyName = "id_petugas";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.id_petugas.DefaultCellStyle = dataGridViewCellStyle10;
             this.id_petugas.HeaderText = "Petugas";
             this.id_petugas.Name = "id_petugas";
             this.id_petugas.ReadOnly = true;
             // 
             // Column2
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Lime;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Lime;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Column2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column2.HeaderText = "";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
@@ -342,22 +374,6 @@
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Column2.Text = "Edit";
             this.Column2.UseColumnTextForButtonValue = true;
-            // 
-            // Column3
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column3.HeaderText = "";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column3.Text = "Hapus";
-            this.Column3.UseColumnTextForButtonValue = true;
             // 
             // UserControlDataMaster
             // 
@@ -411,6 +427,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn kode_inventaris;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_petugas;
         private System.Windows.Forms.DataGridViewButtonColumn Column2;
-        private System.Windows.Forms.DataGridViewButtonColumn Column3;
     }
 }
