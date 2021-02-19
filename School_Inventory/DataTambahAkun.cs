@@ -13,14 +13,15 @@ namespace School_Inventory
 {
     public partial class DataTambahAkun : Form
     {
-        public DataTambahAkun()
+        public DataTambahAkun(UserControlDataAkun parent)
         {
             InitializeComponent();
         }
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
-            Db.Insert("petugas", $"'{txt_IdPetugas}', '{txtUsername}', '{txtPassword}', '{txtNamaPetugas}', '{txtLevel}'");
+
+            Db.Insert("petugas", $"'{txtID.Text}', '{txtuser.Text}', '{txtpass.Text}', '{txtname.Text}', '{txtLevel.Text}'");
             MessageBox.Show("Akun Berhasil Ditambahkan");
             this.Hide();
         }

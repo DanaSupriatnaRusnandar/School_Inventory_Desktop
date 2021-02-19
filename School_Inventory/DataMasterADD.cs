@@ -21,7 +21,7 @@ namespace School_Inventory
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            Db.Insert("inventaris", $"NULL, '{txtNama.Text}', '{txtKondisi.Text}', '{txtKeterangan.Text}', '{txtJumlah.Text}', '{txtIDJenis.Text}','{dateTimePickerReg.Value.ToString("yyyy-MM-dd")}', '{txtIDKelas.Text}', '{txtKodeInventaris.Text}', '{txtIDPetugas.Text}'"); 
+            Db.Insert("inventaris", $"NULL, '{txtNama.Text}', '{txtKondisi.Text}', '{txtKeterangan.Text}', '{txtJumlah.Text}', '{txtIDJenis.Text}','{dateTimePickerReg.Value.ToString("yyyy-MM-dd")}', '{txtIDKelas.Text}', '{txtKodeInventaris.Text}', '{txtIDPetugas.Text}', '{txtIdDetail.Text}'"); 
             MessageBox.Show("Data Berhasil Disimpan");
             this.Hide();
         } 

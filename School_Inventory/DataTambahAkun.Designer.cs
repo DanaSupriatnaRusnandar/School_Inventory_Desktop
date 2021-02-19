@@ -31,17 +31,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtLevel = new System.Windows.Forms.TextBox();
             this.btnTambah = new System.Windows.Forms.Button();
             this.cmblevel = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtname = new System.Windows.Forms.TextBox();
             this.txtNamaPetugas = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtpass = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtuser = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txt_IdPetugas = new System.Windows.Forms.Label();
-            this.txtLevel = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +58,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -70,21 +71,28 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.txtID);
             this.panel2.Controls.Add(this.txtLevel);
             this.panel2.Controls.Add(this.btnTambah);
             this.panel2.Controls.Add(this.cmblevel);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.txtname);
             this.panel2.Controls.Add(this.txtNamaPetugas);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.txtpass);
             this.panel2.Controls.Add(this.txtPassword);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtuser);
             this.panel2.Controls.Add(this.txtUsername);
-            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.txt_IdPetugas);
             this.panel2.Location = new System.Drawing.Point(65, 138);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(427, 402);
             this.panel2.TabIndex = 1;
+            // 
+            // txtLevel
+            // 
+            this.txtLevel.Location = new System.Drawing.Point(55, 280);
+            this.txtLevel.Name = "txtLevel";
+            this.txtLevel.Size = new System.Drawing.Size(311, 20);
+            this.txtLevel.TabIndex = 5;
             // 
             // btnTambah
             // 
@@ -96,7 +104,7 @@
             this.btnTambah.Location = new System.Drawing.Point(283, 334);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(83, 29);
-            this.btnTambah.TabIndex = 11;
+            this.btnTambah.TabIndex = 6;
             this.btnTambah.Text = "Tambah";
             this.btnTambah.UseVisualStyleBackColor = false;
             this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
@@ -111,12 +119,12 @@
             this.cmblevel.TabIndex = 9;
             this.cmblevel.Text = "Level";
             // 
-            // textBox4
+            // txtname
             // 
-            this.textBox4.Location = new System.Drawing.Point(55, 219);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(311, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtname.Location = new System.Drawing.Point(55, 219);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(311, 20);
+            this.txtname.TabIndex = 4;
             // 
             // txtNamaPetugas
             // 
@@ -128,12 +136,12 @@
             this.txtNamaPetugas.TabIndex = 7;
             this.txtNamaPetugas.Text = "Nama Petugas";
             // 
-            // textBox3
+            // txtpass
             // 
-            this.textBox3.Location = new System.Drawing.Point(55, 159);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(311, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtpass.Location = new System.Drawing.Point(55, 159);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(311, 20);
+            this.txtpass.TabIndex = 3;
             // 
             // txtPassword
             // 
@@ -145,12 +153,12 @@
             this.txtPassword.TabIndex = 5;
             this.txtPassword.Text = "Password";
             // 
-            // textBox2
+            // txtuser
             // 
-            this.textBox2.Location = new System.Drawing.Point(55, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(311, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtuser.Location = new System.Drawing.Point(55, 101);
+            this.txtuser.Name = "txtuser";
+            this.txtuser.Size = new System.Drawing.Size(311, 20);
+            this.txtuser.TabIndex = 2;
             // 
             // txtUsername
             // 
@@ -162,13 +170,6 @@
             this.txtUsername.TabIndex = 3;
             this.txtUsername.Text = "Username";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(55, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 20);
-            this.textBox1.TabIndex = 2;
-            // 
             // txt_IdPetugas
             // 
             this.txt_IdPetugas.AutoSize = true;
@@ -179,12 +180,12 @@
             this.txt_IdPetugas.TabIndex = 0;
             this.txt_IdPetugas.Text = "ID Petugas";
             // 
-            // txtLevel
+            // txtID
             // 
-            this.txtLevel.Location = new System.Drawing.Point(55, 280);
-            this.txtLevel.Name = "txtLevel";
-            this.txtLevel.Size = new System.Drawing.Size(311, 20);
-            this.txtLevel.TabIndex = 12;
+            this.txtID.Location = new System.Drawing.Point(55, 44);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(311, 20);
+            this.txtID.TabIndex = 1;
             // 
             // DataTambahAkun
             // 
@@ -208,14 +209,14 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnTambah;
         private System.Windows.Forms.Label cmblevel;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Label txtNamaPetugas;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label txtPassword;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtuser;
         private System.Windows.Forms.Label txtUsername;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label txt_IdPetugas;
         private System.Windows.Forms.TextBox txtLevel;
+        private System.Windows.Forms.TextBox txtID;
     }
 }

@@ -40,21 +40,21 @@ namespace School_Inventory
                     {
                         int id_level = dr.Field<int>("id_level");
 
-                        if (id_level == 1)
+                        if (id_level == 0)
                         {
                             MessageBox.Show("Login berhasil, kamu login sebagai Administrator");
                             this.Hide();
                             Dashboard1 ds = new Dashboard1();
                             ds.Show();
                         }
-                        else if (id_level == 2)
+                        else if (id_level == 1)
                         {
                             MessageBox.Show("Login berhasil, kamu login sebagai Petugasr");
                             this.Hide();
                             DashboardPetugas dp = new DashboardPetugas();
                             dp.Show();
                         }
-                        else if(id_level == 3)
+                        else if(id_level == 2)
                         {
                             MessageBox.Show("Login berhasil, kamu login sebagai Peminjam");
                             this.Hide();

@@ -17,6 +17,7 @@ namespace School_Inventory
         {
             InitializeComponent();
         }
+        public string getId;
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -33,15 +34,18 @@ namespace School_Inventory
             dataGridView.Rows.Clear();
             foreach(DataRow row in data.Rows)
             {
-                dataGridView.Rows.Add("", row.Field<int>("id_inventaris"), row.Field<string>("nama"), row.Field<string>("kondisi"), row.Field<string>("keterangan"), row.Field<string>("jumlah"), row.Field<string>("id_jenis"), row.Field<DateTime>("tanggal_register").ToLongDateString(), row.Field<string>("id_ruang"), row.Field<int>("kode_inventaris"), row.Field<int>("id_petugas"));
+                dataGridView.Rows.Add(row.Field<int>("id_inventaris"), row.Field<string>("nama"), row.Field<string>("kondisi"), row.Field<string>("keterangan"), row.Field<int>("jumlah"), row.Field<int>("id_jenis"), row.Field<DateTime>("tanggal_register").ToLongDateString(), row.Field<int>("id_ruang"), row.Field<int>("kode_inventaris"), row.Field<int>("id_petugas"), row.Field<int>("id_detail_pinjam"));
             }
 
         }
         public void Hapus()
         {
-            
-            int rowIndex = dataGridView.CurrentCell.RowIndex;
-            dataGridView.Rows.RemoveAt(rowIndex);
+            var konfir = MessageBox.Show("Apakah anda ingin menghapus data ini?", "KONFORMASI", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            if(konfir == DialogResult.Yes)
+            {
+                Db.Delete("inventaris", $"id_inventaris = { getId }");
+                Tampilkan();
+            }
         }
 
 

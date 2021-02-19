@@ -30,6 +30,8 @@
         {
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.txtIdDetail = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.txtKondisi = new System.Windows.Forms.TextBox();
             this.dateTimePickerReg = new System.Windows.Forms.DateTimePicker();
             this.txtIDPetugas = new System.Windows.Forms.TextBox();
@@ -65,12 +67,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 56);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(531, 540);
+            this.panel3.Size = new System.Drawing.Size(531, 556);
             this.panel3.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.txtIdDetail);
+            this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.txtKondisi);
             this.panel4.Controls.Add(this.dateTimePickerReg);
             this.panel4.Controls.Add(this.txtIDPetugas);
@@ -92,8 +96,27 @@
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(34, 35);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(459, 468);
+            this.panel4.Size = new System.Drawing.Size(459, 480);
             this.panel4.TabIndex = 0;
+            // 
+            // txtIdDetail
+            // 
+            this.txtIdDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.txtIdDetail.Location = new System.Drawing.Point(171, 372);
+            this.txtIdDetail.Name = "txtIdDetail";
+            this.txtIdDetail.Size = new System.Drawing.Size(246, 20);
+            this.txtIdDetail.TabIndex = 10;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.label11.Location = new System.Drawing.Point(41, 374);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(59, 16);
+            this.label11.TabIndex = 76;
+            this.label11.Text = "ID Detail";
             // 
             // txtKondisi
             // 
@@ -101,7 +124,7 @@
             this.txtKondisi.Location = new System.Drawing.Point(171, 62);
             this.txtKondisi.Name = "txtKondisi";
             this.txtKondisi.Size = new System.Drawing.Size(246, 20);
-            this.txtKondisi.TabIndex = 75;
+            this.txtKondisi.TabIndex = 2;
             // 
             // dateTimePickerReg
             // 
@@ -134,10 +157,10 @@
             this.btnSimpan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.btnSimpan.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSimpan.ForeColor = System.Drawing.Color.White;
-            this.btnSimpan.Location = new System.Drawing.Point(182, 393);
+            this.btnSimpan.Location = new System.Drawing.Point(182, 420);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(106, 37);
-            this.btnSimpan.TabIndex = 10;
+            this.btnSimpan.TabIndex = 11;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = false;
             this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
@@ -286,7 +309,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(531, 593);
+            this.panel1.Size = new System.Drawing.Size(531, 610);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -314,7 +337,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 593);
+            this.ClientSize = new System.Drawing.Size(531, 610);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "DataMasterADD";
@@ -354,5 +377,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtKondisi;
+        private System.Windows.Forms.TextBox txtIdDetail;
+        private System.Windows.Forms.Label label11;
     }
 }

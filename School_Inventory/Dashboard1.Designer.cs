@@ -54,6 +54,8 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.userControlDataMaster1 = new School_Inventory.UserControlDataMaster();
             this.userControlDataAkun1 = new School_Inventory.UserControlDataAkun();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Home)).BeginInit();
@@ -96,6 +98,7 @@
             this.btn_Pengaturan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Pengaturan.IconSize = 32;
             this.btn_Pengaturan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Pengaturan.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btn_Pengaturan.Location = new System.Drawing.Point(0, 615);
             this.btn_Pengaturan.Name = "btn_Pengaturan";
             this.btn_Pengaturan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -119,6 +122,7 @@
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 32;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.iconButton4.Location = new System.Drawing.Point(0, 560);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -141,6 +145,7 @@
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 32;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.iconButton3.Location = new System.Drawing.Point(0, 505);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -163,6 +168,7 @@
             this.Btn_laporan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Btn_laporan.IconSize = 32;
             this.Btn_laporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Btn_laporan.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Btn_laporan.Location = new System.Drawing.Point(0, 450);
             this.Btn_laporan.Name = "Btn_laporan";
             this.Btn_laporan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -186,6 +192,7 @@
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 32;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.iconButton2.Location = new System.Drawing.Point(0, 395);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -208,6 +215,7 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 32;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.iconButton1.Location = new System.Drawing.Point(0, 340);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -230,6 +238,7 @@
             this.btn_pengembalian.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_pengembalian.IconSize = 32;
             this.btn_pengembalian.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_pengembalian.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btn_pengembalian.Location = new System.Drawing.Point(0, 285);
             this.btn_pengembalian.Name = "btn_pengembalian";
             this.btn_pengembalian.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -253,6 +262,7 @@
             this.btn_MasterData.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MasterData.IconSize = 32;
             this.btn_MasterData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_MasterData.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btn_MasterData.Location = new System.Drawing.Point(0, 230);
             this.btn_MasterData.Name = "btn_MasterData";
             this.btn_MasterData.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -276,6 +286,7 @@
             this.btn_Kelas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Kelas.IconSize = 32;
             this.btn_Kelas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Kelas.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btn_Kelas.Location = new System.Drawing.Point(0, 175);
             this.btn_Kelas.Name = "btn_Kelas";
             this.btn_Kelas.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -299,6 +310,7 @@
             this.btn_Dashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Dashboard.IconSize = 32;
             this.btn_Dashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Dashboard.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btn_Dashboard.Location = new System.Drawing.Point(0, 120);
             this.btn_Dashboard.Name = "btn_Dashboard";
             this.btn_Dashboard.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
@@ -325,6 +337,7 @@
             // 
             this.btn_Home.BackgroundImage = global::School_Inventory.Properties.Resources.logosmea;
             this.btn_Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Home.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btn_Home.Location = new System.Drawing.Point(58, 14);
             this.btn_Home.Name = "btn_Home";
             this.btn_Home.Size = new System.Drawing.Size(98, 92);
@@ -350,8 +363,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(6, 32);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(256, 20);
@@ -374,9 +388,9 @@
             // 
             this.panel3.Controls.Add(this.btn_keluar);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(17, 32);
+            this.panel3.Location = new System.Drawing.Point(39, 32);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(69, 51);
+            this.panel3.Size = new System.Drawing.Size(47, 51);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -390,7 +404,8 @@
             this.btn_keluar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_keluar.IconSize = 32;
             this.btn_keluar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_keluar.Location = new System.Drawing.Point(22, 0);
+            this.btn_keluar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_keluar.Location = new System.Drawing.Point(-1, 0);
             this.btn_keluar.Name = "btn_keluar";
             this.btn_keluar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_keluar.Size = new System.Drawing.Size(47, 58);
@@ -456,8 +471,9 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Himalaya", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Himalaya", 18F);
             this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(-99, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 24);
@@ -467,34 +483,58 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.userControlDataAkun1);
             this.panel4.Controls.Add(this.userControlDataMaster1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Controls.Add(this.userControlDataAkun1);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(220, 83);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(688, 614);
+            this.panel4.Size = new System.Drawing.Size(688, 613);
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // userControlDataMaster1
             // 
             this.userControlDataMaster1.BackColor = System.Drawing.Color.White;
-            this.userControlDataMaster1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.userControlDataMaster1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControlDataMaster1.Location = new System.Drawing.Point(0, 0);
             this.userControlDataMaster1.Margin = new System.Windows.Forms.Padding(4);
             this.userControlDataMaster1.Name = "userControlDataMaster1";
-            this.userControlDataMaster1.Size = new System.Drawing.Size(688, 614);
-            this.userControlDataMaster1.TabIndex = 0;
-            this.userControlDataMaster1.Load += new System.EventHandler(this.userControlDataMaster1_Load_1);
+            this.userControlDataMaster1.Size = new System.Drawing.Size(688, 613);
+            this.userControlDataMaster1.TabIndex = 3;
             // 
             // userControlDataAkun1
             // 
             this.userControlDataAkun1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlDataAkun1.Location = new System.Drawing.Point(0, 614);
-            this.userControlDataAkun1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userControlDataAkun1.Location = new System.Drawing.Point(0, 0);
+            this.userControlDataAkun1.Margin = new System.Windows.Forms.Padding(5);
             this.userControlDataAkun1.Name = "userControlDataAkun1";
-            this.userControlDataAkun1.Size = new System.Drawing.Size(688, 0);
-            this.userControlDataAkun1.TabIndex = 1;
+            this.userControlDataAkun1.Size = new System.Drawing.Size(688, 613);
+            this.userControlDataAkun1.TabIndex = 2;
+            this.userControlDataAkun1.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
+            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label4.Location = new System.Drawing.Point(196, 178);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(352, 37);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "SMK Negeri 1 Subang";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label2.Location = new System.Drawing.Point(282, 95);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(164, 37);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Inventaris";
             // 
             // Dashboard1
             // 
@@ -505,7 +545,7 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelTitelBar);
             this.Controls.Add(this.panelMenu);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dashboard1";
@@ -521,6 +561,7 @@
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -537,13 +578,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private FontAwesome.Sharp.IconButton btn_keluar;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_Minimize;
-        private System.Windows.Forms.Button btn_miximize;
-        private System.Windows.Forms.Button btn_Close;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
         private FontAwesome.Sharp.IconButton Btn_laporan;
@@ -551,7 +586,15 @@
         private FontAwesome.Sharp.IconButton iconButton4;
         private FontAwesome.Sharp.IconButton iconButton3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
         private UserControlDataMaster userControlDataMaster1;
         private UserControlDataAkun userControlDataAkun1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_Minimize;
+        private System.Windows.Forms.Button btn_miximize;
+        private System.Windows.Forms.Button btn_Close;
     }
 }
